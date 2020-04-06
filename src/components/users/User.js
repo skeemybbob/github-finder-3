@@ -31,7 +31,7 @@ const User = ({ user, loading, getUser, getUserRepos, repos, match }) => {
 
   return (
     <Fragment>
-      <Link to="/" className="btn btn-light">
+      <Link to="/" className="btn btn-danger">
         Back To Search
       </Link>
       Hireable:{' '}
