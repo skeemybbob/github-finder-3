@@ -21,13 +21,13 @@ const Navbar = ({ icon, title }) => {
 };
 
 Navbar.defaultProps = {
-  title: 'Github Directory',
-  icon: 'fab fa-github'
+  title: 'Terminix App',
+  icon: 'fa fa-dragon',
 };
 
 Navbar.propTypes = {
   title: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired
+  icon: PropTypes.string.isRequired,
 };
 
 export default Navbar;

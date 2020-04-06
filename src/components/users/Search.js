@@ -7,7 +7,7 @@ const Search = ({ searchUsers, showClear, clearUsers, setAlert }) => {
   const onSubmit = (e) => {
     e.preventDefault();
     if (text === '') {
-      setAlert('Please enter something', 'light');
+      setAlert('Please enter something', 'danger');
     } else {
       searchUsers(text);
       setText('');
@@ -33,7 +33,7 @@ const Search = ({ searchUsers, showClear, clearUsers, setAlert }) => {
         />
       </form>
       {showClear && (
-        <button className="btn btn-light btn-block" onClick={clearUsers}>
+        <button className="btn btn-danger btn-block" onClick={clearUsers}>
           Clear
         </button>
       )}
